@@ -1,42 +1,43 @@
-title: "My Blogs Name"
-author: "Default Author Name"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+# site settings
+title: Forty
+subtitle: by HTML5 UP
+email: youremailaddress@gmail.com
+description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+author: Anirban Patra
+street_address: 1234 Somewhere Road
+city: Nashville
+state: TN
+zip_code: 55555
+country: United States of America
+phone: (716) 555-5555
 
-# Email / Social media user names used by the minima theme:
-# All of these are optional and can be removed or commented out
-email: "example@mail.com"
-twitter_username: "twitteruser"
-github_username: "githubuser"
-linkedin_username: "linkedinuser"
-#facebook_username: username
-#flickr_username: username
-#instagram_username: username
-#pinterest_username: username
-#youtube_username: username
-#googleplus_username: +username
+# homepage tiles
+tiles-source: pages # accepts "posts" or "pages"
+tiles-count: 6
 
-#########################################################################################
-######### Nothing below needs to be changed (unless you know what you're doing) #########
-#########################################################################################
-theme: "minima"
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  GitHub: 
+    GitLab:
+      Google-Plus: 
+        Instagram:
+          LinkedIn: 
+            Twitter: 
+              Facebook:
+                Slack:
 
-rss: rss
+# build settings
+markdown: kramdown
 
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
-    
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
 
-titles_from_headings:
-  strip_title: true
-  collections: true
-
-defaults:
-  - scope:
-      path: ""
-      type: post
-    values:
-      tags: Other
+exclude:
+- "*.gemspec"
+- - LICENSE.md
+- CONTRIBUTING.md
+- - README.md 
+                
